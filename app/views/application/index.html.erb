@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset2">
+        <h1>Profiles:</h1>
+        <ul>
+          <% @gifs.each do|gif|%> 
+          <li>
+            <%= gif.name %>
+            <a href="/my/<%= gif.id%>">show</a> |
+            <a href="/my/<%= gif.id%>/edit">edit</a> |
+            <a href="/gifs/<%=gif.id%>/destroy">destroy</a>  
+          </li>
+          <%end%>
+        </ul>
+      </div>
+    </div>
+  </div>

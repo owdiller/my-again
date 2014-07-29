@@ -1,0 +1,26 @@
+
+
+<div class="container">
+<div class="row">
+  <div class='col-md-4'>
+    <img src= '<%= @gif.img %>' style= down:120px left:200px>
+  </div>
+  <div class="col-md-8">
+    <h2> <%=  @gif.name %> <small> <%= @gif.mem %> </small></h2>
+
+  <meta charset="utf-8">
+
+  <%= @gif.bio %>
+  
+    
+  <div> <b>Location:</b>   <%= @gif.town %>
+  </div>
+  <div><b>Completion:</b>
+  
+    <img src='<%= @gif.per %>' style= 'height:80px width:80px'> 
+    <div class="links">
+     <a href="/my/<%= @gif.id %>/edit">edit</a>
+     <a href="/gifs/<%=@gif.id%>/destroy">delete</a>
+    </div>
+    </div></div></div></div>
+

@@ -1,0 +1,15 @@
+<h2>Edit Profile</h2>
+
+
+<form action="/update_gif/<%= @gif.id%>">
+  <input type="text" name="url" placeholder="url" value="<%@gif.name %>">
+  <input type="text" name="name" placeholder="name" value="<%= @gif.name %>">
+  <input type="text" name="membership" placeholder="member since" value="<%=@gif.mem%>">
+  <input type="text" name="img" placeholder="image url" value="<%=@gif.img%>">
+  <input type="text" name="bio" placeholder="biography" value="<%=@gif.bio%>">
+  <input type="text" name="town" placeholder="town" value="<%=@gif.town%>">
+  <input type="text" name="per" placeholder="percent completed url" value="<%=@gif.per%>">
+  
+  <input type="submit">
+  
+</form>
